@@ -49,6 +49,10 @@
   padding: 3px;
   img {
     height: 100%;
+    cursor: pointer;
+    &:hover {
+      filter: invert(100%);
+    }
   }
   h4 {
     display: inline-block;
