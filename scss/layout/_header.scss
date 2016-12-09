@@ -1,0 +1,12 @@
+.header {
+  padding: 0 0 40px 40px;
+  @include clearfix;
+  * {
+    float: left;
+  }
+  h1 {
+    padding: 40px 30px;
+    color: white;
+    text-shadow: $letter-border;
+  }
+}

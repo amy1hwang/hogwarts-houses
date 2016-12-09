@@ -1,0 +1,57 @@
+
+.container-footer {
+  @include clearfix;
+  border: 1px solid black;
+  height: 50px;
+}
+
+.container-footer-left{
+  float: left;
+  & *{
+    display: inline-block;
+  }
+}
+
+.container-footer-right {
+  float: right;
+}
+
+.card-footer {
+  @include clearfix;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  @include row;
+  .gryffindor & {
+    @include border(-top, 2px, $g-gold);
+    color: black;
+  }
+  .slytherin & {
+    @include border(-top, 2px, $s-silver);
+    color: black;
+  }
+  .ravenclaw & {
+    @include border(-top, 2px, $r-bronze);
+    color: black;
+  }
+  .hufflepuff & {
+    @include border(-top, 2px, $h-black);
+    color: black;
+  }
+}
+
+.like, .share, .downloads {
+  @include span-columns(4 of 12);
+  @include omega;
+  // display: inline-block;
+  height: 20px;
+  margin: 4px 0;
+  padding: 3px;
+  img {
+    height: 100%;
+  }
+  h4 {
+    display: inline-block;
+    @include position(relative, null null 3px null);
+  }
+}

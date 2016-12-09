@@ -1,0 +1,19 @@
+body {
+  background: $purple;
+}
+
+.container {
+  @include outer-container;
+  @include clearfix;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+.card-wrapper {
+  @include row;
+  @include clearfix;
+  &:first-of-type {
+    @extend %verticle-gutter;
+  }
+}
