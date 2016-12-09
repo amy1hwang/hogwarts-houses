@@ -1,6 +1,12 @@
 h1 {
   font-family: 'Harry P';
-  font-size: 5em;
+  font-size: 3em;
+  @media #{$brk-phone} {
+    font-size: 4em;
+  }
+  @media #{$brk-tablet} {
+    font-size: 5em;
+  }
 }
 
 h2, h4 {

@@ -19,3 +19,8 @@ $h-image: "../img/hufflepuff.png";
 
 //letter border
 $letter-border: -3px 0 $dark-purple, 0 3px $dark-purple, 3px 0 $dark-purple, 0 -3px $dark-purple;
+
+//media-query
+$brk-wide: '(min-width: 1160px)';
+$brk-tablet: '(min-width: 800px)';
+$brk-phone: '(min-width: 600px)';

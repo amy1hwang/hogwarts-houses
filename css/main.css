@@ -39,7 +39,13 @@ table {
 
 h1 {
   font-family: 'Harry P';
-  font-size: 5em; }
+  font-size: 3em; }
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 4em; } }
+  @media (min-width: 800px) {
+    h1 {
+      font-size: 5em; } }
 
 h2, h4 {
   font-family: arial; }
@@ -195,28 +201,56 @@ body {
   text-align: right; }
 
 .header {
-  padding: 0 0 40px 40px; }
+  padding-left: 10px;
+  padding-bottom: 40px;
+  display: inline-block; }
   .header::after {
     clear: both;
     content: "";
     display: block; }
-  .header * {
-    float: left; }
+  .header .logo {
+    float: left;
+    width: 100px; }
+    @media (min-width: 600px) {
+      .header .logo {
+        width: 160px; } }
+    @media (min-width: 800px) {
+      .header .logo {
+        width: 235px; } }
+    .header .logo img {
+      width: 100%; }
   .header h1 {
-    padding: 40px 30px;
+    float: left;
+    padding: 20px 30px;
     color: white;
     text-shadow: -3px 0 #251933, 0 3px #251933, 3px 0 #251933, 0 -3px #251933; }
+    @media (min-width: 600px) {
+      .header h1 {
+        padding: 30px 30px; } }
+    @media (min-width: 800px) {
+      .header h1 {
+        padding: 40px 30px; } }
 
 .card {
-  background: white;
-  border-radius: 5px;
-  border: 10px solid #f3bf1b;
-  position: relative; }
+  background: white; }
   .card::after {
     clear: both;
     content: "";
     display: block; }
-  .card:after {
+  @media screen and (min-width: 600px) {
+    .card {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .card:last-child {
+        margin-right: 0; } }
+
+.gryffindor {
+  border-radius: 5px;
+  border: 10px solid #f3bf1b;
+  position: relative; }
+  .gryffindor:after {
     width: 100%;
     height: 100%;
     content: "";
@@ -229,30 +263,97 @@ body {
     left: 0;
     position: absolute;
     z-index: -1; }
-  .card .trans-bg {
+  .gryffindor .trans-bg {
     padding: 10px;
     width: 100%;
     height: 100%;
     background: rgba(77, 5, 6, 0.5); }
-  @media screen and (min-width: 600px) {
-    .card {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .card:last-child {
-        margin-right: 0; } }
+
+.slytherin {
+  border-radius: 5px;
+  border: 10px solid #9e9996;
+  position: relative; }
+  .slytherin:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../img/slytherin.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1; }
+  .slytherin .trans-bg {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: rgba(37, 88, 31, 0.5); }
+
+.ravenclaw {
+  border-radius: 5px;
+  border: 10px solid #a67a53;
+  position: relative; }
+  .ravenclaw:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../img/ravenclaw.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1; }
+  .ravenclaw .trans-bg {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 48, 74, 0.5); }
+
+.hufflepuff {
+  border-radius: 5px;
+  border: 10px solid #0c0d08;
+  position: relative; }
+  .hufflepuff:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../img/hufflepuff.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1; }
+  .hufflepuff .trans-bg {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 222, 11, 0.5); }
 
 .card-text {
-  display: inline-block;
   line-height: 3em;
   position: relative;
   top: -50px;
   left: 20px; }
+  .card-text::after {
+    clear: both;
+    content: "";
+    display: block; }
   .card-text h1 {
     font-size: 2em; }
     @media screen and (max-width: 1160px) {
       .card-text h1 {
         font-size: 1.5em; } }
+  @media screen and (min-width: 600px) {
+    .card-text {
+      display: inline-block; } }
 
 /*# sourceMappingURL=main.css.map */

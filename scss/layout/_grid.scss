@@ -1,43 +1,30 @@
 .card {
   background: white;
   @include clearfix;
-  @include house($g-gold, $g-image, $g-red);
-
   @include media(min-width 600px) {
     @include span-columns(6 of 12);
    }
 }
 
-// .gryffindor {
-//   @include house($g-gold, $g-image);
-//   .trans-bg {
-//     @include transparent-background($g-red);
-//   }
-// }
-//
-// .slytherin {
-//   @include house($s-silver, $s-image);
-//   .trans-bg {
-//     @include transparent-background($s-green);
-//   }
-// }
-//
-// .ravenclaw {
-//   @include house($r-bronze, $r-image);
-//   .trans-bg {
-//     @include transparent-background($r-blue);
-//   }
-// }
-//
-// .hufflepuff {
-//   @include house($h-black, $h-image);
-//   .trans-bg {
-//     @include transparent-background($h-yellow);
-//   }
-// }
+.gryffindor {
+  @include house($g-gold, $g-image, $g-red);
+}
+
+.slytherin {
+  @include house($s-silver, $s-image, $s-green);
+}
+
+.ravenclaw {
+  @include house($r-bronze, $r-image, $r-blue);
+}
+
+.hufflepuff {
+  @include house($h-black, $h-image, $h-yellow);
+}
 
 .card-text {
-  display: inline-block;
+  @include clearfix;
+
   line-height: 3em;
   @include position(relative, -50px null null 20px);
   h1 {
@@ -46,4 +33,7 @@
       font-size: 1.5em;
     }
   }
+  @include media(min-width 600px) {
+    display: inline-block;
+   }
 }

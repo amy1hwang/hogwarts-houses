@@ -1,12 +1,32 @@
 .header {
-  padding: 0 0 40px 40px;
   @include clearfix;
-  * {
+  padding-left: 10px;
+  padding-bottom: 40px;
+  display: inline-block;
+  .logo {
     float: left;
+    width: 100px;
+    @media #{$brk-phone} {
+      width: 160px;
+    }
+    @media #{$brk-tablet} {
+      width: 235px;
+    }
+    img {
+      width: 100%;
+    }
   }
   h1 {
-    padding: 40px 30px;
+    float: left;
+    padding: 20px 30px;
     color: white;
     text-shadow: $letter-border;
+    @media #{$brk-phone} {
+      padding: 30px 30px;
+
+    }
+    @media #{$brk-tablet} {
+      padding: 40px 30px;
+    }
   }
 }
