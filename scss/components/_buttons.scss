@@ -1,0 +1,41 @@
+
+ #{$all-buttons} {
+   border-radius: 100px;
+   box-shadow: none;
+   background-color: $clear;
+   width: 8em;
+   height: 4em;
+   font-weight: bold;
+   margin-top: 30px;
+   .gryffindor & {
+     @include border(null, 3px, $g-red);
+   }
+   .slytherin & {
+     @include border(null, 3px, $s-green);
+   }
+   .ravenclaw & {
+     @include border(null, 3px, $r-blue);
+   }
+   .hufflepuff & {
+     @include border(null, 3px, darken($h-yellow, 20%));
+   }
+ }
+
+ #{$all-buttons-focus},
+ #{$all-buttons-hover} {
+   .gryffindor & {
+     @include button-bg($g-red);
+   }
+   .slytherin & {
+     @include button-bg($s-green, 20%, 60%);
+
+   }
+   .ravenclaw & {
+     @include button-bg($r-blue);
+
+   }
+   .hufflepuff & {
+     background: darken($h-yellow, 10%);
+     color: lighten($h-yellow, 40%);
+   }
+ }

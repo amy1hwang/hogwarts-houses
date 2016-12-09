@@ -4,7 +4,255 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-* {
-  font-family: 'Harry P'; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-family: 'Harry P';
+  font-size: 5em; }
+
+h2, h4 {
+  font-family: arial; }
+
+h4 {
+  font-size: .7em; }
+
+.crest {
+  width: 180px;
+  height: 197px; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  border-radius: 100px;
+  box-shadow: none;
+  background-color: transparent;
+  width: 8em;
+  height: 4em;
+  font-weight: bold;
+  margin-top: 30px; }
+  .gryffindor button, .gryffindor input[type="button"], .gryffindor input[type="reset"], .gryffindor input[type="submit"] {
+    border: 3px solid #4d0506; }
+    .gryffindor button a, .gryffindor input[type="button"] a, .gryffindor input[type="reset"] a, .gryffindor input[type="submit"] a {
+      color: #4d0506;
+      text-decoration: none; }
+  .slytherin button, .slytherin input[type="button"], .slytherin input[type="reset"], .slytherin input[type="submit"] {
+    border: 3px solid #25581f; }
+    .slytherin button a, .slytherin input[type="button"] a, .slytherin input[type="reset"] a, .slytherin input[type="submit"] a {
+      color: #25581f;
+      text-decoration: none; }
+  .ravenclaw button, .ravenclaw input[type="button"], .ravenclaw input[type="reset"], .ravenclaw input[type="submit"] {
+    border: 3px solid #0b304a; }
+    .ravenclaw button a, .ravenclaw input[type="button"] a, .ravenclaw input[type="reset"] a, .ravenclaw input[type="submit"] a {
+      color: #0b304a;
+      text-decoration: none; }
+  .hufflepuff button, .hufflepuff input[type="button"], .hufflepuff input[type="reset"], .hufflepuff input[type="submit"] {
+    border: 3px solid #918507; }
+    .hufflepuff button a, .hufflepuff input[type="button"] a, .hufflepuff input[type="reset"] a, .hufflepuff input[type="submit"] a {
+      color: #918507;
+      text-decoration: none; }
+
+.gryffindor button:focus, .gryffindor input[type="button"]:focus, .gryffindor input[type="reset"]:focus, .gryffindor input[type="submit"]:focus, .gryffindor
+button:hover, .gryffindor input[type="button"]:hover, .gryffindor input[type="reset"]:hover, .gryffindor input[type="submit"]:hover {
+  background: #ad0b0d;
+  color: #fbbcbd; }
+.slytherin button:focus, .slytherin input[type="button"]:focus, .slytherin input[type="reset"]:focus, .slytherin input[type="submit"]:focus, .slytherin
+button:hover, .slytherin input[type="button"]:hover, .slytherin input[type="reset"]:hover, .slytherin input[type="submit"]:hover {
+  background: #45a33a;
+  color: #c4e9c0; }
+.ravenclaw button:focus, .ravenclaw input[type="button"]:focus, .ravenclaw input[type="reset"]:focus, .ravenclaw input[type="submit"]:focus, .ravenclaw
+button:hover, .ravenclaw input[type="button"]:hover, .ravenclaw input[type="reset"]:hover, .ravenclaw input[type="submit"]:hover {
+  background: #186aa3;
+  color: #c4e1f6; }
+.hufflepuff button:focus, .hufflepuff input[type="button"]:focus, .hufflepuff input[type="reset"]:focus, .hufflepuff input[type="submit"]:focus, .hufflepuff
+button:hover, .hufflepuff input[type="button"]:hover, .hufflepuff input[type="reset"]:hover, .hufflepuff input[type="submit"]:hover {
+  background: #c2b109;
+  color: #fdf8cd; }
+
+body {
+  background: #644388; }
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.card-wrapper {
+  display: block; }
+  .card-wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .card-wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (min-width: 600px) {
+    .card-wrapper:first-of-type {
+      margin-bottom: 2em; } }
+
+.card-footer {
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: block; }
+  .card-footer::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .card-footer::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .gryffindor .card-footer {
+    border-top: 2px solid #f3bf1b;
+    color: black; }
+    .gryffindor .card-footer a {
+      color: #f3bf1b;
+      text-decoration: none; }
+  .slytherin .card-footer {
+    border-top: 2px solid #9e9996;
+    color: black; }
+    .slytherin .card-footer a {
+      color: #9e9996;
+      text-decoration: none; }
+  .ravenclaw .card-footer {
+    border-top: 2px solid #a67a53;
+    color: black; }
+    .ravenclaw .card-footer a {
+      color: #a67a53;
+      text-decoration: none; }
+  .hufflepuff .card-footer {
+    border-top: 2px solid #0c0d08;
+    color: black; }
+    .hufflepuff .card-footer a {
+      color: #0c0d08;
+      text-decoration: none; }
+
+.like, .share, .downloads {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 33.29693%;
+  margin-right: 0;
+  height: 20px;
+  margin: 4px 0;
+  padding: 3px; }
+  .like:last-child, .share:last-child, .downloads:last-child {
+    margin-right: 0; }
+  .like img, .share img, .downloads img {
+    height: 100%;
+    cursor: pointer; }
+    .like img:hover, .share img:hover, .downloads img:hover {
+      filter: invert(100%); }
+  .like h4, .share h4, .downloads h4 {
+    display: inline-block;
+    position: relative;
+    bottom: 3px; }
+
+.share {
+  text-align: center; }
+
+.downloads {
+  text-align: right; }
+
+.header {
+  padding: 0 0 40px 40px; }
+  .header::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .header * {
+    float: left; }
+  .header h1 {
+    padding: 40px 30px;
+    color: white;
+    text-shadow: -3px 0 #251933, 0 3px #251933, 3px 0 #251933, 0 -3px #251933; }
+
+.card {
+  background: white;
+  border-radius: 5px;
+  border: 10px solid #f3bf1b;
+  position: relative; }
+  .card::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .card:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../img/gryffindor.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1; }
+  .card .trans-bg {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: rgba(77, 5, 6, 0.5); }
+  @media screen and (min-width: 600px) {
+    .card {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .card:last-child {
+        margin-right: 0; } }
+
+.card-text {
+  display: inline-block;
+  line-height: 3em;
+  position: relative;
+  top: -50px;
+  left: 20px; }
+  .card-text h1 {
+    font-size: 2em; }
+    @media screen and (max-width: 1160px) {
+      .card-text h1 {
+        font-size: 1.5em; } }
 
 /*# sourceMappingURL=main.css.map */

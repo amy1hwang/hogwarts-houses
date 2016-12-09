@@ -14,6 +14,8 @@ body {
   @include row;
   @include clearfix;
   &:first-of-type {
-    @extend %verticle-gutter;
+    @include media(min-width 600px) {
+      margin-bottom: 2em;
+    }
   }
 }

@@ -1,3 +1,6 @@
+//color
+$purple: #644388;
+$dark-purple: darken($purple, 25%);
 $g-gold: #f3bf1b;
 $g-red: #4d0506;
 $s-silver: #9e9996;
@@ -6,3 +9,13 @@ $r-bronze: #a67a53;
 $r-blue: #0b304a;
 $h-black: #0c0d08;
 $h-yellow: #f3de0b;
+$clear: rgba(0, 0, 0, 0);
+
+//image
+$g-image: "../img/gryffindor.png";
+$s-image: "../img/slytherin.png";
+$r-image: "../img/ravenclaw.png";
+$h-image: "../img/hufflepuff.png";
+
+//letter border
+$letter-border: -3px 0 $dark-purple, 0 3px $dark-purple, 3px 0 $dark-purple, 0 -3px $dark-purple;

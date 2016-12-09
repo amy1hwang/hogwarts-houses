@@ -1,0 +1,45 @@
+@mixin house($border, $image, $background) {
+  border-radius: 5px;
+  border: 10px solid $border;
+  position: relative;
+  &:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(#{$image});
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .trans-bg {
+    padding: 10px;
+    width:100%;
+    height:100%;
+    background:rgba($background, 0.5);
+  }
+}
+
+// @mixin transparent-background($background) {
+//     padding: 10px;
+//     width:100%;
+//     height:100%;
+//     background:rgba($background, 0.5);
+// }
+
+@mixin border($side:null, $px: null, $color: null) {
+  border#{$side}: $px solid $color;
+    a {
+      color: $color;
+      text-decoration: none;
+    }
+}
+
+@mixin button-bg($color: null, $bg-amount: 20%, $c-amount: 70%) {
+  background: lighten($color, $bg-amount);
+  color: lighten($color, $c-amount);
+}
