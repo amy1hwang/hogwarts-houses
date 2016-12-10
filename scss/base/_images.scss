@@ -1,4 +1,15 @@
 .crest {
   width: 180px;
   height: 197px;
+  @include position(relative, 20px null null 50%);
+  transform: translate(-50%, 0);
+  @media #{$brk-tablet} {
+    position: inherit;
+    transform: translate(0, 0);
+  }
+  @media #{$brk-wide} {
+    @include span-columns(3 of 12);
+    // display: inline-block;
+    // margin: 40px 0 0 10px;
+  }
 }

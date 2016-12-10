@@ -6,7 +6,7 @@
    width: 8em;
    height: 4em;
    font-weight: bold;
-   margin-top: 30px;
+   margin-top: 10px;
    .gryffindor & {
      @include border(null, 3px, $g-red);
    }

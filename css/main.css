@@ -39,10 +39,10 @@ table {
 
 h1 {
   font-family: 'Harry P';
-  font-size: 3em; }
-  @media (min-width: 600px) {
+  font-size: 2.5em; }
+  @media (min-width: 650px) {
     h1 {
-      font-size: 4em; } }
+      font-size: 3.5em; } }
   @media (min-width: 800px) {
     h1 {
       font-size: 5em; } }
@@ -55,7 +55,23 @@ h4 {
 
 .crest {
   width: 180px;
-  height: 197px; }
+  height: 197px;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0); }
+  @media (min-width: 800px) {
+    .crest {
+      position: inherit;
+      transform: translate(0, 0); } }
+  @media (min-width: 1160px) {
+    .crest {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .crest:last-child {
+        margin-right: 0; } }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   border-radius: 100px;
@@ -64,7 +80,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   width: 8em;
   height: 4em;
   font-weight: bold;
-  margin-top: 30px; }
+  margin-top: 10px; }
   .gryffindor button, .gryffindor input[type="button"], .gryffindor input[type="reset"], .gryffindor input[type="submit"] {
     border: 3px solid #4d0506; }
     .gryffindor button a, .gryffindor input[type="button"] a, .gryffindor input[type="reset"] a, .gryffindor input[type="submit"] a {
@@ -135,6 +151,17 @@ body {
     .card-wrapper:first-of-type {
       margin-bottom: 2em; } }
 
+.card-main {
+  display: block; }
+  .card-main::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .card-main::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 .card-footer {
   height: 20px;
   padding-left: 5px;
@@ -193,12 +220,22 @@ body {
     display: inline-block;
     position: relative;
     bottom: 3px; }
-
-.share {
-  text-align: center; }
-
-.downloads {
-  text-align: right; }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    .like, .share, .downloads {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .like:last-child, .share:last-child, .downloads:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 420px) {
+    .like, .share, .downloads {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .like:last-child, .share:last-child, .downloads:last-child {
+        margin-right: 0; } }
 
 .header {
   padding-left: 10px;
@@ -210,8 +247,8 @@ body {
     display: block; }
   .header .logo {
     float: left;
-    width: 100px; }
-    @media (min-width: 600px) {
+    width: 80px; }
+    @media (min-width: 650px) {
       .header .logo {
         width: 160px; } }
     @media (min-width: 800px) {
@@ -224,7 +261,7 @@ body {
     padding: 20px 30px;
     color: white;
     text-shadow: -3px 0 #251933, 0 3px #251933, 3px 0 #251933, 0 -3px #251933; }
-    @media (min-width: 600px) {
+    @media (min-width: 650px) {
       .header h1 {
         padding: 30px 30px; } }
     @media (min-width: 800px) {
@@ -237,7 +274,7 @@ body {
     clear: both;
     content: "";
     display: block; }
-  @media screen and (min-width: 600px) {
+  @media (min-width: 650px) {
     .card {
       float: left;
       display: block;
@@ -268,6 +305,10 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(77, 5, 6, 0.5); }
+    .gryffindor .trans-bg::after {
+      clear: both;
+      content: "";
+      display: block; }
 
 .slytherin {
   border-radius: 5px;
@@ -291,6 +332,10 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(37, 88, 31, 0.5); }
+    .slytherin .trans-bg::after {
+      clear: both;
+      content: "";
+      display: block; }
 
 .ravenclaw {
   border-radius: 5px;
@@ -314,6 +359,10 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(11, 48, 74, 0.5); }
+    .ravenclaw .trans-bg::after {
+      clear: both;
+      content: "";
+      display: block; }
 
 .hufflepuff {
   border-radius: 5px;
@@ -337,23 +386,37 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(243, 222, 11, 0.5); }
+    .hufflepuff .trans-bg::after {
+      clear: both;
+      content: "";
+      display: block; }
 
 .card-text {
   line-height: 3em;
-  position: relative;
-  top: -50px;
-  left: 20px; }
+  margin: 50px 10px; }
   .card-text::after {
     clear: both;
     content: "";
     display: block; }
   .card-text h1 {
-    font-size: 2em; }
-    @media screen and (max-width: 1160px) {
+    font-size: 1.5em; }
+    @media screen and (min-width: 800px) {
       .card-text h1 {
-        font-size: 1.5em; } }
-  @media screen and (min-width: 600px) {
+        font-size: 2em; } }
+    @media screen and (min-width: 1000px) and (max-width: 1200px) {
+      .card-text h1 {
+        font-size: 1.9em; } }
+    @media screen and (min-width: 1200px) {
+      .card-text h1 {
+        font-size: 2em; } }
+  @media screen and (min-width: 1160px) {
     .card-text {
-      display: inline-block; } }
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 61.61588%;
+      margin-right: 0; }
+      .card-text:last-child {
+        margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */

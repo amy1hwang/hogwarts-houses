@@ -19,3 +19,8 @@ body {
     }
   }
 }
+
+.card-main {
+  @include row;
+  @include clearfix;
+}
