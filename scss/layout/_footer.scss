@@ -1,20 +1,14 @@
-//
-// .container-footer {
-//   @include clearfix;
-//   border: 1px solid black;
-//   height: 50px;
-// }
-//
-// .container-footer-left{
-//   float: left;
-//   & *{
-//     display: inline-block;
-//   }
-// }
-//
-// .container-footer-right {
-//   float: right;
-// }
+
+.container-footer {
+  @include clearfix;
+  height: 50px;
+  margin-top: 50px;
+  float: right;
+  * {
+    display: inline-block;
+  }
+}
+
 body {
 }
 .card-footer {
@@ -44,7 +38,7 @@ body {
   @include span-columns(4.18 of 12);
   @include omega;
   height: 20px;
-  margin: 4px 0;
+  margin: 10px 0 0 0;
   padding: 3px;
   img {
     height: 100%;
@@ -55,7 +49,7 @@ body {
   }
   h4 {
     display: inline-block;
-    @include position(relative, null null 3px null);
+    @include position(relative, null null 4px null);
   }
   @include media(min-width 600px max-width 900px) {
     @include span-columns(12 of 12);

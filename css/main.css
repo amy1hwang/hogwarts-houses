@@ -54,6 +54,9 @@ h1 {
 h2, h4 {
   font-family: arial; }
 
+h2 {
+  margin-top: -10px; }
+
 h4 {
   font-size: .7em; }
 
@@ -76,6 +79,11 @@ h4 {
       width: 23.23176%; }
       .crest:last-child {
         margin-right: 0; } }
+
+.container-footer img {
+  padding: 5px;
+  height: 50px;
+  vertical-align: middle; }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   border-radius: 100px;
@@ -131,7 +139,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-bottom: 10px; }
   .container::after {
     clear: both;
     content: "";
@@ -165,6 +173,17 @@ body {
     clear: both;
     content: "";
     display: block; }
+
+.container-footer {
+  height: 50px;
+  margin-top: 50px;
+  float: right; }
+  .container-footer::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .container-footer * {
+    display: inline-block; }
 
 .card-footer {
   height: 20px;
@@ -209,7 +228,7 @@ body {
   width: 33.29693%;
   margin-right: 0;
   height: 20px;
-  margin: 4px 0;
+  margin: 10px 0 0 0;
   padding: 3px; }
   .like:last-child, .share:last-child, .downloads:last-child {
     margin-right: 0; }
@@ -221,7 +240,7 @@ body {
   .like h4, .share h4, .downloads h4 {
     display: inline-block;
     position: relative;
-    bottom: 3px; }
+    bottom: 4px; }
   @media screen and (min-width: 600px) and (max-width: 900px) {
     .like, .share, .downloads {
       float: left;
