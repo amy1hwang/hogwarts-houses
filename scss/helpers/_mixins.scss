@@ -17,6 +17,7 @@
     bottom: 0;
     position: absolute;
     z-index: 1;
+    transition: opacity .5s;
     @include media(max-width 650px) {
       background-position: center;
     }
@@ -29,6 +30,15 @@
     width:100%;
     height:100%;
     background:rgba($background, 0.5);
+    transition: background .5s;
+  }
+  &:hover {
+    &:after {
+      opacity: 0;
+    }
+    .trans-bg {
+      background:rgba($background, 0.7);
+    }
   }
 }
 
