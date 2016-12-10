@@ -4,8 +4,6 @@
   @media #{$brk-phone} {
     @include span-columns(6 of 12);
   }
-  @media #{$brk-phone} {
-  }
 }
 
 .gryffindor {
@@ -42,8 +40,6 @@
 
   }
   @include media(min-width 1160px) {
-    // display: inline-block;
-    // margin: 0px 5px 40px 5px;
     @include span-columns(7.5 of 12);
     @include omega;
   }

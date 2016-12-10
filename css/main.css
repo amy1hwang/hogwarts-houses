@@ -4,6 +4,10 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.card-footer {
+  padding-left: 5px;
+  padding-right: 5px; }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -164,8 +168,6 @@ body {
 
 .card-footer {
   height: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
   display: block; }
   .card-footer::after {
     clear: both;
@@ -295,12 +297,19 @@ body {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0.5;
+    opacity: 0.3;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     position: absolute;
-    z-index: -1; }
+    z-index: 1; }
+    @media screen and (max-width: 650px) {
+      .gryffindor:after {
+        background-position: center; } }
   .gryffindor .trans-bg {
+    position: relative;
+    z-index: 2;
     padding: 10px;
     width: 100%;
     height: 100%;
@@ -322,12 +331,19 @@ body {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0.5;
+    opacity: 0.3;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     position: absolute;
-    z-index: -1; }
+    z-index: 1; }
+    @media screen and (max-width: 650px) {
+      .slytherin:after {
+        background-position: center; } }
   .slytherin .trans-bg {
+    position: relative;
+    z-index: 2;
     padding: 10px;
     width: 100%;
     height: 100%;
@@ -349,12 +365,19 @@ body {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0.5;
+    opacity: 0.3;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     position: absolute;
-    z-index: -1; }
+    z-index: 1; }
+    @media screen and (max-width: 650px) {
+      .ravenclaw:after {
+        background-position: center; } }
   .ravenclaw .trans-bg {
+    position: relative;
+    z-index: 2;
     padding: 10px;
     width: 100%;
     height: 100%;
@@ -376,12 +399,19 @@ body {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0.5;
+    opacity: 0.3;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     position: absolute;
-    z-index: -1; }
+    z-index: 1; }
+    @media screen and (max-width: 650px) {
+      .hufflepuff:after {
+        background-position: center; } }
   .hufflepuff .trans-bg {
+    position: relative;
+    z-index: 2;
     padding: 10px;
     width: 100%;
     height: 100%;

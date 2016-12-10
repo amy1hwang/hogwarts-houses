@@ -9,7 +9,5 @@
   }
   @media #{$brk-wide} {
     @include span-columns(3 of 12);
-    // display: inline-block;
-    // margin: 40px 0 0 10px;
   }
 }
