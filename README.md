@@ -1,8 +1,8 @@
 # Hogwarts Houses
-## by Amy Hwang
+## by Amy Hwang | 12.2.2016
 
 # description of the webpage
-This webpage is to show which famous wizard/witch you are most similar to from each Hogwarts house.
+This webpage is a landing page for a website that shows which famous wizard/witch you are most similar to from each Hogwarts house.
 
 # program setup instructions
 * Clone this repository.
